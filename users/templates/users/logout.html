@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                <h3><a class="nav-item nav-link px-0" href="{% url 'login' %}">ورود مجدد به سایت</a></h3>
+                حساب کاربری ندارید؟ <a class="mr-3" href="{% url 'register' %}"> ثبت نام </a>
+            </small>
+        </div>
+    </div>
+{% endblock content %}
